@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Video Podcaster</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		
+		<script type="text/javascript" src="js/init.js"></script>
+		<script type="text/javascript" src="js/Core.js"></script>
+		<script type="text/javascript" src="js/Util.js"></script>
+
+		
+	</head>
+	<body onload="Podcast.Core.loadData();">
+
+	<div id="wrapper">
+<!-- 	<span id="ajaxButton" style="cursor: pointer; text-decoration: underline">
+	  Make a request
+	</span> -->
+		<div id="header-wrapper">
+
+			<div id="header-title" class="highlight"></div>
+			<div id="header-description">
+				
+			</div>
+
+		</div>
+		<div id="content-wrapper">
+
+			<div id="video-menu">
+			<!--<div class="buttons" id="next"></div>-->
+			<div id="video-menu-container">
+							
+				<ol id="episode-list">
+					
+					  
+
+				</ol>
+					
+			</div>
+			<!--<div class="buttons" id="prev"></div>-->
+			</div> 
+ 			
+			<div id="video-player">
+				<div id="video-container">
+					<video id="episode-video" type="video/mp4" controls width="576" height="322">Your browser does not support the <code>video</code> element.</video>	
+					<div id="video-description"></div>
+				</div>
+			
+			</div> 
+			
+		</div>
+
+		</div>
+	</body>
+</html>

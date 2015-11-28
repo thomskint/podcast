@@ -1,0 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+    background-image: url("/images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    font-size: 12px;
+    line-height:1.75em;
+    font-family: 'Lucida Grande', 'Helvetica Neue', Verdana, Arial, sans-serif;
+}
+
+/* Basic */
+input,textarea,select {
+    font-family: 'Lucida Grande', 'Helvetica Neue', Verdana, Arial, sans-serif;
+    font-weight:400;
+    color:#282b34;
+    line-height:1.75em;
+    background:#282b34;
+}
+
+ul,ol{
+    margin-bottom: 1.25em;
+    margin-top: 0;  
+}
+
+h1{
+    font-size: 16px;
+}
+
+.highlight {
+    font-weight:700;
+    background: #f77f0e !important;
+    color: #fff;
+}
+
+#wrapper {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width:1200px;
+    height: 640px;
+    text-align:center;
+    border-radius:3px;
+    padding: 1em;
+
+}
+
+div#content-wrapper {
+    color:#282b34;
+    margin: 1em;
+}
+
+div#header-wrapper {
+    color:#282b34;
+}
+
+div#video-menu {
+    text-align:center;
+    background:#fff;
+    border-radius:3px;
+    position:relative;
+    float: left;
+    width: 500px;
+    height: 450px;
+    background-color:transparent;
+}
+
+.episode-list{
+    padding:0
+}
+
+.episode-card{
+    border-radius: 4px;
+    padding: 1.25em;
+    position: relative;
+    background: #fff;
+    list-style-type: none;
+    height: 52px;
+    margin-bottom: 30px;
+    padding-bottom: 1.25em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1.25em;
+}
+
+
+.episode-card:focus {
+    
+    outline-color: #ff7f00;
+    background: #f77f0e;
+    opacity: 0.6;
+    webkit-border-radius: 4!important;
+    -moz-border-radius: 4!important;
+    border-radius: 4!important;
+    color: #fff;
+}
+
+div#video-menu-container{
+    margin:0px auto;
+    padding: 5px;
+    height: 430px;
+    position:relative;
+    overflow-y:scroll;
+    background-color:transparent;
+}
+
+div#video-player {
+    text-align:center;
+    background:#fff;
+    border-radius:.55em;
+    height: 440px;
+    width:650px;
+    float:right;
+}
+
+div#video-container{
+    margin-top: 40px ;
+}
+
+.highlight {
+    
+    text-align:center;
+    background:#fff;
+    border-radius:.55em;
+    padding:1em;
+    margin: 1em;
+}
+
+#header-title{
+    width: 500px;
+}
+
+#header-description{
+    text-align:left;
+    color: #fff;
+    padding:1em;
+    margin: 1em;
+}
+
+div#video-description{
+    padding:10px 10px;
+    margin: 5px;
+}
+
+#prev{
+    top:0px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 30px 30px 0 30px;
+    border-color: #282b34 transparent transparent transparent;
+}
+
+#next{
+    bottom:0px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 30px 30px 30px;
+    border-color: transparent transparent #282b34 transparent;
+}
+
+.buttons{
+    position:absolute;
+    z-index:100;
+    width:60px;
+    height:30px;
+    left:50%;
+    margin-left:-30px;
+}
+
