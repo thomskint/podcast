@@ -12,7 +12,7 @@
 
 		
 	</head>
-	<body onload="Podcast.Core.loadData();">
+	<body onload="Podcast.Core.init();">
 
 	<div id="wrapper">
 <!-- 	<span id="ajaxButton" style="cursor: pointer; text-decoration: underline">
@@ -43,6 +43,9 @@
 			</div> 
  			
 			<div id="video-player">
+				<div id="video-prompt">
+					<h1>Please Select a video from the feed list</h1>
+				</div>
 				<div id="video-container">
 					<video id="episode-video" type="video/mp4" controls width="576" height="322">Your browser does not support the <code>video</code> element.</video>	
 					<div id="video-description"></div>

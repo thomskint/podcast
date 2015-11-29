@@ -52,7 +52,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 50%;
-    font-size: 12px;
+    font-size: 13px;
     line-height:1.75em;
     font-family: 'Lucida Grande', 'Helvetica Neue', Verdana, Arial, sans-serif;
 }
@@ -71,8 +71,16 @@ ul,ol{
     margin-top: 0;  
 }
 
+li{
+    height: 40px
+}
+
 h1{
-    font-size: 16px;
+    font-size: 18px;
+}
+
+h1.error{
+    color: red;
 }
 
 .highlight {
@@ -90,6 +98,7 @@ h1{
     text-align:center;
     border-radius:3px;
     padding: 1em;
+
 
 }
 
@@ -143,6 +152,14 @@ div#video-menu {
     color: #fff;
 }
 
+.episode-card:focus .camera {
+    background: #fff;
+}
+
+.episode-card:focus .camera:after {
+    border-right: 40px solid #fff;
+}
+
 div#video-menu-container{
     margin:0px auto;
     padding: 5px;
@@ -190,30 +207,49 @@ div#video-description{
     margin: 5px;
 }
 
-#prev{
-    top:0px;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 30px 30px 0 30px;
-    border-color: #282b34 transparent transparent transparent;
+div#video-prompt{
+    margin: auto;
+    height: 300px;
+    position: relative;
+    top: 200px; left: 0; bottom: 0; right: 0;
 }
 
-#next{
-    bottom:0px;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 0 30px 30px 30px;
-    border-color: transparent transparent #282b34 transparent;
+.cameraIcon{
+    float: left;
+    margin: 7px 0 0 10px;
+    height: 40px;
 }
 
-.buttons{
-    position:absolute;
-    z-index:100;
-    width:60px;
-    height:30px;
-    left:50%;
-    margin-left:-30px;
+.cameraPrompt{
+    margin: 7px 0 0 10px;
+    height: 40px;
 }
+
+.camera {
+    
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+    background: #000;
+    position: relative;
+}
+
+
+
+.camera:before {
+   
+}
+.camera:after {
+    content: '';
+    display: block;
+    float: right;
+    margin-top: 0px;
+    margin-right: -20px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 40px solid #000;
+}
+
 
