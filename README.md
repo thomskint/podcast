@@ -25,7 +25,7 @@ Proxy running at http://localhost:3000/
 
 
 Load up the index.html page in a current browser.
-The RSS feed which is used can be changed by changing the RSSFEEDURL property in js/CORE.js
+The RSS feed which is used can be changed by changing the RSSFEEDURL property in js/Core.js
 
 
 The application tested with Firefox 42.0, Chrome 46, Safari 8
